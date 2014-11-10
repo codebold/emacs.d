@@ -1,0 +1,25 @@
+http://ergoemacs.org/emacs/emacs23_install_elpa.html
+
+To install, paste the following in a empty file:
+
+(let ((buffer (url-retrieve-synchronously
+               "http://tromey.com/elpa/package-install.el")))
+  (save-excursion
+    (set-buffer buffer)
+    (goto-char (point-min))
+    (re-search-forward "^$" nil 'move)
+    (eval-region (point) (point-max))
+    (kill-buffer (current-buffer))))
+
+then call eval-buffer.
+
+That will download the file and place it at ~/.emacs.d/elpa/package.el.
+
+(very neat elisp trick! note to self: url-retrieve-synchronously is bundled with emacs 23. Use it like wget/curl!)
+
+Also, it automatically adds the following in your .emacs file, so that it'll be loaded everytime you start emacs.
+
+(when
+    (load
+     (expand-file-name "~/.emacs.d/elpa/package.el"))
+  (package-initialize))
