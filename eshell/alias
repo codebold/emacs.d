@@ -1,0 +1,4 @@
+alias drwxrwxrwx  $*
+alias gp cd s:/_projects/
+alias ff find-file $1
+alias ll ls -la
