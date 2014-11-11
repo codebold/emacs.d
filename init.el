@@ -18,6 +18,7 @@
 (require 'codebold-theme)
 
 (unless (eq system-type 'windows-nt)
+  (add-to-list 'load-path (expand-file-name "windows" user-emacs-directory))
   (require 'codebold-windows))
 
 (require 'codebold-shell)
