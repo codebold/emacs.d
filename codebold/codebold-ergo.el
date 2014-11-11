@@ -7,8 +7,9 @@
 ;;; Code:
 
 ;; Initializes ergoemacs with Neo2 key bindings.
-(require 'ergoemacs-mode)
+(setq ergoemacs-theme nil)
 (setq ergoemacs-keyboard-layout "neo")
+(require 'ergoemacs-mode)
 (ergoemacs-mode 1)
 
 ;; Redo commands
