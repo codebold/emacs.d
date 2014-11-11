@@ -1,4 +1,4 @@
-;;; init.el --- Emacs configuration file
+.;;; init.el --- Emacs configuration file
 
 ;;; Commentary:
 ;; 
@@ -6,10 +6,8 @@
 
 ;;; Code:
 
-;; Adds the current dir to the load-path.
-(add-to-list 'load-path (file-name-directory (or (buffer-file-name) load-file-name)))
+(add-to-list 'load-path (expand-file-name "codebold" user-emacs-directory))
 
-;; Loads the required configurations.
 (require 'codebold-paths)
 (require 'codebold-repo)
 (require 'codebold-base)
@@ -18,6 +16,9 @@
 (require 'codebold-editing)
 (require 'codebold-browse)
 (require 'codebold-theme)
+
+(unless (eq system-type 'windows-nt)
+  (require 'codebold-windows))
 
 (require 'codebold-shell)
 (require 'codebold-web)
