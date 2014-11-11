@@ -26,9 +26,6 @@
 (show-paren-mode) ; Show parens
 (which-function-mode) ; Which function are we in?
 
-;; Start fullscreen
-(w32-send-sys-command 61488)
-
 ;; Displays the buffer name and the major mode in the window's title bar
 (setq frame-title-format "Emacs - %b - %m - %M")
 ;; Plays aural feedback

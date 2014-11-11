@@ -8,7 +8,6 @@
 
 
 ;; Encoding
-(setq w32-enable-unicode-output) 
 (setq utf-translate-cjk-mode nil) ; disable CJK coding/encoding (Chinese/Japanese/Korean characters)
 (set-language-environment 'utf-8)
 (set-keyboard-coding-system 'utf-8-mac) ; For old Carbon emacs on OS X only
@@ -21,9 +20,6 @@
 
 ;; Debugging
 (setq debug-on-error t)
-
-;; Syntax checking
-(add-hook 'after-init-hook #'global-flycheck-mode)
 
 ;; Printer
 (setq printer-name "\\\\SEC001599EEEAD0")
