@@ -8,6 +8,8 @@
 
 ;; Preserves the desktop state
 (require 'desktop)
+(unless (file-exists-p (expand-file-name "desktop" user-emacs-directory))
+  (make-directory (expand-file-name "desktop" user-emacs-directory) t))
 (setq desktop-dirname             (expand-file-name "desktop" user-emacs-directory)
       desktop-base-file-name      "emacs-desktop"
       desktop-base-lock-name      "lock"
