@@ -24,7 +24,8 @@
 ;; Checks if package.el was already loaded for emacs wersions below 24.
 (if (and (< emacs-major-version 24)
          (not (require 'package nil 'noerror)))
-    (error "The package \"package.el\" is not installed!  (\"~/emacs.d/package.el.txt\" - package.el on Emacs < 24)"))
+    (load-file (expand-file-name "emacs23/package.el" user-emacs-directory))
+;;    (error "The package \"package.el\" is not installed!  (\"~/emacs.d/package.el.txt\" - package.el on Emacs < 24)"))
 
 ;; Initializes melpa package manager.
 (require 'package)
