@@ -18,6 +18,8 @@
 ;; if at the beg of line C-k includes the newline chars
 (setq kill-whole-line t)
 
+(setq shift-select-mode t)
+
 ;; goto last change
 (require 'goto-last-change)
 

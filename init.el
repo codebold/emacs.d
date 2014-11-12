@@ -6,6 +6,9 @@
 
 ;;; Code:
 
+(setq custom-file (expand-file-name "custom.el" user-emacs-directory))
+(load custom-file)
+
 (add-to-list 'load-path (expand-file-name "codebold" user-emacs-directory))
 
 (require 'codebold-paths)

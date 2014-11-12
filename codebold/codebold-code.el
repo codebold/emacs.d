@@ -2,7 +2,7 @@
 
 ;;; Commentary:
 ;; 
-;; Configures web editing features.
+;; Configures code editing features.
 
 ;;; Code:
 

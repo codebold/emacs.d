@@ -35,6 +35,7 @@
 ;; Install required packages (http://blog.zhengdong.me/2012/03/14/how-i-manage-emacs-packages).
 
 (require 'cl)
+
 ;; Guarantee all packages are installed on start
 (defvar packages-list
   '(auto-complete
