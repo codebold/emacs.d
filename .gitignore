@@ -10,6 +10,7 @@ recentf
 .savehist
 ac-comphist.dat
 desktop/
+codebold/codebold-local.el
 dict/default/
 el-get/
 elpa/

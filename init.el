@@ -28,4 +28,7 @@
 (require 'codebold-web)
 (require 'codebold-code)
 
+(when (file-exists-p (expand-file-name "codebold/codebold-local.el" user-emacs-directory))
+  (require 'codebold-local))
+
 ;;; init.el ends here
