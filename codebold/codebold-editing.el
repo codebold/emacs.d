@@ -6,6 +6,10 @@
 
 ;;; Code:
 
+ ;; PuTTY fix. Ugly. Bad. But it works. (Good)
+ (define-key global-map "\M-[1~" 'beginning-of-line)
+ (define-key global-map [select] 'end-of-line)
+
 ;; tabs and column defs
 (setq-default indent-tabs-mode nil) ; no fucking tabs!
 (setq tab-width 4) ; but just in case
