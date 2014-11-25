@@ -17,4 +17,5 @@ elpa/
 eshell/history
 eshell/lastdir
 savehist
+tramp
 workgroups
