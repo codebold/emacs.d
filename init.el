@@ -20,6 +20,7 @@
 (require 'codebold-browse)
 (require 'codebold-theme)
 
+(require 'codebold-putty)
 (when (eq system-type 'windows-nt)
   (add-to-list 'load-path (expand-file-name "windows" user-emacs-directory))
   (require 'codebold-windows))
