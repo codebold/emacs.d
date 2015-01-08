@@ -10,10 +10,12 @@ recentf
 .savehist
 ac-comphist.dat
 desktop/
+doc/
 codebold/codebold-local.el
 dict/default/
 el-get/
 elpa/
+erc-extras/
 eshell/history
 eshell/lastdir
 savehist
