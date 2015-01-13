@@ -14,6 +14,7 @@
 (require 'codebold-paths)
 (require 'codebold-repo)
 (require 'codebold-base)
+(require 'codebold-server)
 (require 'codebold-ergo)
 (require 'codebold-state)
 (require 'codebold-editing)
@@ -25,9 +26,9 @@
   (add-to-list 'load-path (expand-file-name "windows" user-emacs-directory))
   (require 'codebold-windows))
 
+(require 'codebold-code)
 (require 'codebold-shell)
 (require 'codebold-web)
-(require 'codebold-code)
 
 (when (file-exists-p (expand-file-name "codebold/codebold-local.el" user-emacs-directory))
   (require 'codebold-local))
