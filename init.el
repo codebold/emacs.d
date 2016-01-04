@@ -14,7 +14,7 @@
 (require 'codebold-paths)
 (require 'codebold-repo)
 (require 'codebold-base)
-(require 'codebold-ergo)
+;(require 'codebold-ergo)
 (require 'codebold-server)
 (require 'codebold-state)
 (require 'codebold-editing)
