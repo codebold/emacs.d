@@ -43,7 +43,7 @@
     browse-kill-ring
     desktop
     dired+
-    ergoemacs-mode
+;;    ergoemacs-mode
     flycheck
     goto-last-change
     ido
